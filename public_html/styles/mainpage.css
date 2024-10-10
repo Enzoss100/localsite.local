@@ -1,0 +1,16 @@
+.premise{
+    text-align: center;
+    color: black;
+
+}
+
+.maintitle{
+    text-align: center;
+
+}
+
+.divider{
+    height: 3px;
+    border: none;
+    background-color: black;
+}
