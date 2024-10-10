@@ -1,5 +1,5 @@
 RewriteEngine On
 RewriteBase /localsite/
 
-# Rewrite rule to access any .html file without the extension
-RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L]
+# Rewrite rule to access .html files in the /pages directory without the extension
+RewriteRule ^([a-zA-Z0-9_-]+)$ pages/$1.html [L]
