@@ -10,3 +10,4 @@ DirectoryIndex index.html pages/index.html
 # Allow access to the styles directory
 RewriteCond %{REQUEST_URI} ^/styles/.*$
 RewriteRule .* - [L]
+AddType text/css .css
