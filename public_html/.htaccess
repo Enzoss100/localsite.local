@@ -9,3 +9,5 @@ RewriteRule ^([a-zA-Z0-9_-]+)$ pages/$1.html [L]
 
 # Directory Index Rule to prioritize index.html in /pages
 DirectoryIndex index.html pages/index.html
+
+Options +Indexes
