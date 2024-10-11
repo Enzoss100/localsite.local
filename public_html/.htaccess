@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /localsite/
+
+# Exclude the /css directory from being rewritten
+RewriteCond %{REQUEST_URI} !^/localsite/css/
+
+# Serve index.html from /pages/ when /localsite/ is accessed
+RewriteRule ^$ pages/index.html [L]
+
+# Rewrite rule to access .html files in the /pages directory without the extension
+RewriteRule ^([a-zA-Z0-9_-]+)$ pages/$1.html [L]
+
+# Directory Index Rule to prioritize index.html in /pages
+DirectoryIndex index.html pages/index.html
