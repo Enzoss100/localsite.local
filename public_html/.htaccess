@@ -6,8 +6,3 @@ RewriteRule ^([a-zA-Z0-9_-]+)$ pages/$1.html [L]
 
 # Directory Index Rule
 DirectoryIndex index.html pages/index.html
-
-# Allow access to the styles directory
-RewriteCond %{REQUEST_URI} ^/styles/.*$
-RewriteRule .* - [L]
-AddType text/css .css
